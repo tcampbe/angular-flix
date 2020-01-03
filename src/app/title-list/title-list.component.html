@@ -1,0 +1,9 @@
+<div class="TitleList" >
+    <!--data-loaded={props.movies && props.movies.length > 0} -->
+    <div class="Title">
+    <h1>{{title}}</h1>
+    <div class="titles-wrapper">
+        <app-item *ngFor="let movie of movies"  [movie]="movie.title" ></app-item>
+    </div>
+    </div>
+</div>
