@@ -12,11 +12,7 @@ export class SearchBoxComponent implements OnInit {
   ngOnInit() {
   }
   loadSearch(e){
-        /* this is so th search will only be done on enter key 
-        if (this.props.loadSearch && e.key === "Enter" && this.state.searchTerm) {
-          this.props.loadSearch(this.state.searchTerm);
-        }
-        */
+
   }
 
 }
