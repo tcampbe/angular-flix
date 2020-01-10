@@ -13,7 +13,7 @@ export class ItemComponent implements OnInit {
 
   ngOnInit() {  
     let backDrop = "http://image.tmdb.org/t/p/original" + this.movie.backdrop_path;
-    this.theStyles = {backgroundImage: 'url(' + backDrop + ')'};
+    this.theStyles = {width: '200px', backgroundImage: 'url(' + backDrop + ')'};
 
     if(!this.movie.name) {
       this.name = this.movie.original_title;
