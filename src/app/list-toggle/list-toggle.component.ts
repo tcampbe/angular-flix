@@ -11,5 +11,8 @@ export class ListToggleComponent implements OnInit {
 
   ngOnInit() {
   }
+  saveMovieToList(){
+    
+  }
 
 }
