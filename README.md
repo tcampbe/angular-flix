@@ -1,6 +1,8 @@
 ## Intro
 Let's build a project based on everyone's favorite app, Netflix. We want users to be able to search for movies and add them to their favorite list. We do not have a database of movies, so we will have to use an existing API to retrieve that data. We are going to use our server and database to store the user's favorite list. 
 
+<img src="demo.gif">
+
 ### Setup
 * Sign up for [themoviedb.org](https://www.themoviedb.org/documentation/api)
 * Fork, Clone, npm install, npm start
