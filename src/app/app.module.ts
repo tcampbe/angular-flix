@@ -12,6 +12,7 @@ import { ItemComponent } from './item/item.component';
 import { ListToggleComponent } from './list-toggle/list-toggle.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,11 +25,13 @@ import { UserProfileComponent } from './user-profile/user-profile.component';
     ItemComponent,
     ListToggleComponent,
     NavigationComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    HttpClientModule
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
