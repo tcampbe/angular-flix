@@ -27,12 +27,21 @@ import { HttpClientModule } from '@angular/common/http';
     NavigationComponent,
     UserProfileComponent  
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+
+  providers: [
+
+  ],
+
+  bootstrap: [
+    AppComponent
+  ]
+  
 })
+
 export class AppModule { }
