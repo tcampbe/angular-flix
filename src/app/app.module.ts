@@ -25,8 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     ItemComponent,
     ListToggleComponent,
     NavigationComponent,
-    UserProfileComponent,
-    HttpClientModule
+    UserProfileComponent  
   ],
   imports: [
     BrowserModule,
