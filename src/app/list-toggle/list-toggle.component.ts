@@ -14,4 +14,5 @@ export class ListToggleComponent implements OnInit {
   saveMovieToList() {
     this.movieService.saveToList(this.movie);
   }
+  
 }
