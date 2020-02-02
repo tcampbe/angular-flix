@@ -1,16 +1,18 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-title-list',
-  templateUrl: './title-list.component.html',
-  styleUrls: ['./title-list.component.css']
+  selector: "app-title-list",
+  templateUrl: "./title-list.component.html",
+  styleUrls: ["./title-list.component.css"]
 })
 export class TitleListComponent implements OnInit {
+  
+  constructor() {}
 
-  constructor() { }
   @Input() movies;
-  @Input() title;
-  ngOnInit() {
-  }
 
+  @Input() title;
+
+  ngOnInit() {}
+  
 }

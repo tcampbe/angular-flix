@@ -13,6 +13,11 @@ import { ListToggleComponent } from './list-toggle/list-toggle.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MainComponent } from './main/main.component';
+import { MovieServiceService } from "./services/movie-service.service";
+import { MovieApiServiceService } from "./services/movie-api-service.service";
+import { ApiServiceService } from "./services/api-service.service";
+
 
 @NgModule({
   declarations: [
@@ -25,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     ItemComponent,
     ListToggleComponent,
     NavigationComponent,
-    UserProfileComponent  
+    UserProfileComponent,
+    MainComponent  
   ],
 
   imports: [
@@ -35,7 +41,9 @@ import { HttpClientModule } from '@angular/common/http';
   ],
 
   providers: [
-
+    MovieServiceService, 
+    MovieApiServiceService, 
+    ApiServiceService
   ],
 
   bootstrap: [
