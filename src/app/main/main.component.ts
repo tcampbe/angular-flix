@@ -11,8 +11,8 @@ export class MainComponent implements OnInit {
   constructor(private movieService: MovieServiceService) {}
 
   ngOnInit() {
-    this.myMovieList = this.movieService.getMovieList();
     this.searchResults = this.movieService.getSearchResults();
+    this.myMovieList = this.movieService.getMovieList();
     this.movieService.loadMovieList();
   }
 
