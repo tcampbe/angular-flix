@@ -22,7 +22,7 @@ export class ApiServiceService {
     };
 
     return await this.httpClient
-      .post(this.url + path, data, httpOptions)
+      .post(this.url + path, data, options)
       .toPromise();
   }
 }

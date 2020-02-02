@@ -15,13 +15,15 @@ export class MovieApiServiceService {
 
   async get(path, options?): Promise<any> {
     return await this.httpClient
-      .get(this.url + path, options)
+      .get(this.url + path 
+        + "&api_key=33f59a5c5ff0dcf180c32c8e4dcd5792", 
+        options)
       .toPromise();
   }
 
           /*   &api_key=yourkey  
           example ---  .get(this.url 
-          path + "&api_key=a917e025b6c202b9d096152592a6a5ad", options)
+          path + "&api_key=33f59a5c5ff0dcf180c32c8e4dcd5792", options)
           .toPromise();
           */
 
