@@ -1,21 +1,16 @@
 <div>
-    <header class="Header">
-      <app-logo ></app-logo>
-      <!-- <Navigation>   --> 
-        <app-navigation></app-navigation>
-      <!--  </Navigation>   --> 
-      <app-search-box ></app-search-box>
-      <!--  <UserProfile>  -->
-        <app-user-profile></app-user-profile>
-      <!--*  </UserProfile>   -->
-    </header>
-    <app-hero></app-hero>
-    <app-title-list 
-      title="Search Results" 
-      [movies]="searchResults" ></app-title-list>  
-    <app-title-list 
-      title="My Movies" 
-      [movies]="myMovieList"></app-title-list>  
-  </div>
-  
-  
+  <header class="Header">
+    <app-logo></app-logo>
+    <app-navigation></app-navigation>
+
+    <app-search-box></app-search-box>
+
+    <app-user-profile></app-user-profile>
+  </header>
+  <app-hero></app-hero>
+  <app-title-list
+    title="Search Results"
+    [movies]="searchResults"
+  ></app-title-list>
+  <app-title-list title="My Movies" [movies]="myMovieList"></app-title-list>
+</div>

@@ -11,7 +11,9 @@ export class ApiServiceService {
   url = "https://ce-authenticated-backend.herokuapp.com/";
 
   async get(path, options?): Promise<any> {
-    return await this.httpClient.get(this.url + path, options).toPromise();
+    return await this.httpClient
+      .get(this.url + path, options)
+      .toPromise();
   }
 
   async post(path, data, options?): Promise<any> {

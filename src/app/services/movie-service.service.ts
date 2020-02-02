@@ -24,19 +24,20 @@ export class MovieServiceService {
     }
 
     async searchForMovies(searchTerm) {
-      let response = await this.movieApi.get(`search/multi?query=${searchTerm}`);
+      let response = await this.movieApi
+        .get(`search/multi?query=${searchTerm}`);
       this.searchResults.length = 0;
       this.searchResults.push(...response.results);
     }
 
     async loadMovieList() {
-      let results = await this.api.get(`movies`);
+      let results = await this.api.get(`publicapi/movies`);
       this.myMovieList.length = 0;
       this.myMovieList.push(...results);
     }
 
     async saveToList(movie) {
-      await this.api.post(`movies`, movie);
+      await this.api.post(`publicapi/movies`, movie);
       this.loadMovieList();
     } 
     
