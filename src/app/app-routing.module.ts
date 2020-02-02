@@ -5,8 +5,10 @@ import { MainComponent } from "./main/main.component";
 
 const routes: Routes = [
   { path: "", component: MainComponent },
-
-  { path: "titlelist", component: TitleListComponent }
+        /* when i put main in "" 
+        it breaks
+        */  
+{ path: "titlelist", component: TitleListComponent }
 ];
 
 @NgModule({
